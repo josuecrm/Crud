@@ -1,6 +1,8 @@
 import { FaBirthdayCake } from 'react-icons/fa';
+import { FaUserEdit } from 'react-icons/fa';
 import { MdEmail } from 'react-icons/md';
-import { AiFillEdit, AiFillDelete } from 'react-icons/Ai';
+import { MdDelete } from 'react-icons/md';
+
 
 
 const CardUser = ({ user, selectUser, deleteUser }) => {
@@ -16,8 +18,8 @@ const CardUser = ({ user, selectUser, deleteUser }) => {
                 </div>
                 <div className='container-buttons'>
                     <div className="buttons">
-                        <button onClick={() => selectUser(user)} className='button edit'><AiFillEdit /> Edit</button>
-                        <button onClick={() => deleteUser(user.id)} className='button delete'><AiFillDelete /> Delete </button>
+                        <button onClick={() => selectUser(user)} className='button edit'><FaUserEdit /> Edit</button>
+                        <button onClick={() => deleteUser(user.id)} className='button delete'><MdDelete /> Delete </button>
                     </div>
                 </div>
             </div>
